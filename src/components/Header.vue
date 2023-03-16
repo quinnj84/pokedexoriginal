@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-gradient-to-r from-blue-600 to-sky-600 flex md:justify-between md:flex-row flex-col w-full h-16 py-2 px-6 md:items-center overflow-hidden">
+    <header class="bg-gradient-to-r from-green-600 to-purple-600 flex md:justify-between md:flex-row flex-col w-full h-45 py-2 px-6 md:items-center overflow-hidden">
         <div>
             <h1 class="text-gray-50 text-2xl font-semibold">Gotta Catch 'Em All!</h1>
         </div>

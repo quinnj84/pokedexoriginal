@@ -16,5 +16,3 @@ const Header = defineAsyncComponent(() => import("./components/Header.vue"));
 // lazy load the Layout component
 const Layout = defineAsyncComponent(() => import("./components/Layout.vue"));
 </script>
-
-<style scoped></style>

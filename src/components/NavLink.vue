@@ -1,5 +1,5 @@
 <template>
-    <RouterLink class="text-gray-50 text-lg font-semibold" :to="href" v-bind="$attrs"> 
+    <RouterLink class="text-gray-50 text-lg font-semibold" :to="href" v-bind="$attrs">
         <slot />
     </RouterLink>
 </template>

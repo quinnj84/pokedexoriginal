@@ -1,34 +1,58 @@
 <template>
     <div class="flex flex-col space-y-6">
-        <h1 class="text-6xl text-gray-900 font-semibold">
+        <h1 class="text-6xl text-purple-600 font-semibold">
             {{ pokemonDetails?.name }} 
         </h1>
         <img :src="image" :alt="pokemonDetails?.name" class="w-full h-full rounded-lg" />
         <div>
-            <div class="flex items-center space-x-4">
-                <span> Primary Type</span>
-                <span> {{ pokemonDetails?.type1 }} </span>
+            <div class="flex items-center space-x-20">
+                <span class="attributes"> Primary Type :</span>
+                <span><strong> {{ pokemonDetails?.type1 }} </strong></span>
             </div>
     
-            <div class="flex items-center space-x-4" v-if="pokemonDetails?.type2">
-                <span> Secondary Type</span>
-                <span> {{ pokemonDetails?.type2 }} </span>
+            <div class="flex items-center space-x-12" v-if="pokemonDetails?.type2">
+                <span class="attributes"> Secondary Type :</span>
+                <span><strong> {{ pokemonDetails?.type2 }} </strong></span>
             </div>    
         </div>
         
         
         <div>
-            <div class="flex items-center space-x-4">
-                <span> Weight</span>
-                <span> {{ pokemonDetails?.stats?.weight_kg }} Kg </span>
+            <div class="flex items-center space-x-32">
+                <span class="attributes"> Weight :</span>
+                <span><strong> {{ pokemonDetails?.stats?.weight_kg }} Kg </strong></span>
             </div>
             
-            <div class="flex items-center space-x-4">
-                <span> Height</span>
-                <span> {{ pokemonDetails?.stats?.height_m }} m </span>
+            <div class="flex items-center space-x-32">
+                <span class ="attributes"> Height :</span>
+                <span><strong>  {{ pokemonDetails?.stats?.height_m }} m </strong></span>
+            </div>
+            
+            <div class="flex items-center space-x-32">
+                <span class="attributes"> HP :</span>
+                <span><strong> {{ pokemonDetails?.stats?.hp }} pts </strong></span>
+            </div>
+            
+            <div class="flex items-center space-x-32">
+                <span class ="attributes"> Attack :</span>
+                <span><strong> {{ pokemonDetails?.stats?.attack }} pts </strong></span>
+            </div>
+
+            <div class="flex items-center space-x-32">
+                <span class="attributes"> Speed :</span>
+                <span><strong> {{ pokemonDetails?.stats?.speed }} pts</strong></span>
+            </div>
+            
+            <div class="flex items-center space-x-32">
+                <span class ="attributes"> Defense :</span>
+                <span><strong> {{ pokemonDetails?.stats?.defense }} pts </strong></span>
             </div>
         </div>
     </div>
+<br>
+<form>
+    <input class="button" type="button" value="Back" onclick="history.back()">
+</form>
 </template>
 
 <script setup>
