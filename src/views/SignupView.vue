@@ -7,5 +7,6 @@
 
 <script setup>
 
+// HomeView.vue
 </script>
 

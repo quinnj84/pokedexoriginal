@@ -35,6 +35,7 @@ const router = createRouter({
       }
     },
     {
+      // adds dynamic routes like pokemons/bulbasaur, pokemons/charmander etc :name is a dynamic route parameter
       path: '/pokemons/:name',
       name: 'pokemon',
       component: () => import('../views/PokemonView.vue'),
