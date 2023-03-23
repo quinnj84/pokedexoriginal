@@ -5,12 +5,12 @@
         </h1>
         <img :src="image" :alt="pokemonDetails?.name" class="w-full h-full rounded-lg" />
         <div>
-            <div class="flex items-center space-x-20">
+            <div class="flex items-center justify-between">
                 <span class="attributes"> Primary Type :</span>
                 <span><strong> {{ pokemonDetails?.type1 }} </strong></span>
             </div>
     
-            <div class="flex items-center space-x-12" v-if="pokemonDetails?.type2">
+            <div class="flex items-center justify-between" v-if="pokemonDetails?.type2">
                 <span class="attributes"> Secondary Type :</span>
                 <span><strong> {{ pokemonDetails?.type2 }} </strong></span>
             </div>    
@@ -18,32 +18,32 @@
         
         
         <div>
-            <div class="flex items-center space-x-32">
+            <div class="flex items-center justify-between">
                 <span class="attributes"> Weight :</span>
                 <span><strong> {{ pokemonDetails?.stats?.weight_kg }} Kg </strong></span>
             </div>
             
-            <div class="flex items-center space-x-32">
+            <div class="flex items-center justify-between">
                 <span class ="attributes"> Height :</span>
                 <span><strong>  {{ pokemonDetails?.stats?.height_m }} m </strong></span>
             </div>
             
-            <div class="flex items-center space-x-32">
+            <div class="flex items-center justify-between">
                 <span class="attributes"> HP :</span>
                 <span><strong> {{ pokemonDetails?.stats?.hp }} pts </strong></span>
             </div>
             
-            <div class="flex items-center space-x-32">
+            <div class="flex items-center justify-between">
                 <span class ="attributes"> Attack :</span>
                 <span><strong> {{ pokemonDetails?.stats?.attack }} pts </strong></span>
             </div>
 
-            <div class="flex items-center space-x-32">
+            <div class="flex items-center justify-between">
                 <span class="attributes"> Speed :</span>
                 <span><strong> {{ pokemonDetails?.stats?.speed }} pts</strong></span>
             </div>
             
-            <div class="flex items-center space-x-32">
+            <div class="flex items-center justify-between">
                 <span class ="attributes"> Defense :</span>
                 <span><strong> {{ pokemonDetails?.stats?.defense }} pts </strong></span>
             </div>
